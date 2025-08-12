@@ -1,7 +1,6 @@
-@inproceedings{kwon2025granular,
-  title     = {Granular Concept Circuits: Toward a Fine-Grained Circuit Discovery for Concept Representations},
-  author    = {Dahee Kwon and Sehyun Lee and Jaesik Choi},
-  booktitle = {Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)},
-  year      = {2025},
-  pages     = {to appear}
+@article{kwon2025granular,
+  title={Granular Concept Circuits: Toward a Fine-Grained Circuit Discovery for Concept Representations},
+  author={Kwon, Dahee and Lee, Sehyun and Choi, Jaesik},
+  journal={arXiv preprint arXiv:2508.01728},
+  year={2025}
 }
