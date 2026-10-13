@@ -5,7 +5,8 @@ Static personal website for GitHub Pages.
 ## Files
 
 - `index.html`: homepage.
-- `cv.html`: printable curriculum vitae.
+- `assets/sehyun_CV.pdf`: CV linked from the homepage.
+- `cv.html`: printable HTML version of the curriculum vitae.
 - `assets/css/`: shared and CV styles.
 - `assets/images/portraits/`: homepage portrait.
 - `assets/images/publications/`: publication thumbnails.
