@@ -1,54 +1,129 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sehyun Lee</title>
-    <!-- Tailwind CSS CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        /* Custom font import */
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
-
-    </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sehyun Lee · KAIST</title>
+  <meta name="description" content="Sehyun Lee is a Ph.D. student at KAIST studying model interpretability, concept circuits, polysemantic features, and multimodal language models.">
+  <meta property="og:title" content="Sehyun Lee · KAIST">
+  <meta property="og:description" content="Model interpretability and multimodal learning. Publications, research, and industry experience.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://sehyun-lee288.github.io/">
+  <meta property="og:image" content="https://sehyun-lee288.github.io/assets/images/portraits/portrait-retouched.png">
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
-
-<body class="antialiased">
-    <nav aria-label="Global" class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8">
-        <div class="flex lg:flex-1">
-            HOME
+<body>
+  <a class="skip-link" href="#publications">Skip to publications</a>
+  <main class="page">
+    <header class="intro">
+      <div class="identity"><h1>Sehyun Lee</h1><p class="position">Ph.D. student in Artificial Intelligence · KAIST</p></div>
+      <img class="portrait" src="assets/images/portraits/portrait-retouched.png" width="1254" height="1254" alt="Sehyun Lee smiling outdoors" fetchpriority="high">
+      <div class="bio">
+        <p>I am a Ph.D. student at the <a href="https://gsai.kaist.ac.kr/">Kim Jaechul Graduate School of AI, KAIST</a>, advised by <a href="https://sailab.kaist.ac.kr/">Prof. Jaesik Choi</a> in the Statistical Artificial Intelligence Lab.</p>
+        <p>I study how neural networks represent concepts and use multimodal information. My research focuses on <strong>model interpretability</strong>, including concept circuits and polysemantic features, and <strong>multimodal language models</strong>.</p>
+        <p>I have worked on multimodal model evaluation at NAVER Cloud and industrial time-series modeling at Gauss Labs and INEEJI. I am interested in postdoctoral and research opportunities.</p>
+      </div>
+      <div class="contact" aria-label="Contact and professional profiles">
+        <a href="mailto:sehyun.lee@kaist.ac.kr">Email</a><a href="cv.html">CV</a><a href="https://scholar.google.com/citations?user=qWqV8OwAAAAJ">Google Scholar</a><a href="https://github.com/sehyun-lee288">GitHub</a><a href="https://linkedin.com/in/sehyun-lee-58b3791a7">LinkedIn</a>
+      </div>
+    </header>
+    <section id="publications" aria-labelledby="publications-heading">
+      <h2 id="publications-heading">Publications</h2><p class="section-note">* Equal contribution</p>
+      <h3 class="year">2026</h3>
+      <article class="paper">
+        <div class="paper-copy">
+          <h4><a href="https://arxiv.org/abs/2609.05871">Where Does the Sound Go? Tracing Acoustic Information Loss in Audio-Conditioned LLMs</a></h4>
+          <p class="venue">Findings of EMNLP 2026 · Accepted</p>
+          <p class="authors">Song-ha Jo*, <strong>Sehyun Lee*</strong>, Soyoon Kim, Jaesik Choi, and Sanghyuk Choi</p>
+          <p class="summary">Tracing acoustic information through audio-conditioned LLMs to identify where useful cues stop influencing their answers.</p>
+          <div class="paper-links"><a href="https://arxiv.org/abs/2609.05871">Paper</a></div>
         </div>
-    </nav>
-
-
-    <!-- Personal Info Section -->
-    <div class="container mx-auto max-w-7xl items-center justify-between p-6 lg:px-8">
-        <p class="text-xl font-semibold text-gray-800">Sehyun Lee</p>
-        <p class="text-md text-gray-500">Ph.D student in KAIST (Korea Advanced Institute of Science and Technology)</p>
-    </div>
-    <!-- End of Personal Info -->
-
-    <!-- Project Info Section -->
-    <div class="container mx-auto max-w-7xl p-6 lg:px-8">
-        <p class="text-xl font-semibold text-gray-800">Publications (*: equal contribution)</p>
-        <!-- GCC -->
-        <div class="flex flex-wrap gap-x-8 mt-2">
-            <div class="w-full">
-                <h6><a href="projects/gcc/index.html" target="_blank" class="font-medium text-blue-600 underline dark:text-blue-500 hover:no-underline">Granular Concept Circuits: Toward a Fine-Grained Circuit Discovery for Concept Representation</a></h6>
-                <p>Dahee Gwon*, <b>Sehyun Lee*</b> and Jaesik Choi</p>
-                <p>ICCV 2025</p>
-            </div>
+        <a class="paper-image" href="assets/images/publications/thumbnail_audio.png" aria-label="View the audio-language model diagram at full size"><img src="assets/images/publications/thumbnail_audio.png" alt="Speech, sound, and music traced through an audio encoder, projector, language model, and output head" loading="lazy" width="1039" height="1072"></a>
+      </article>
+      <article class="paper">
+        <div class="paper-copy">
+          <h4><a href="https://arxiv.org/abs/2609.13198">SPICE: Simple Polysemantic Feature Interpretation via Clustering-based Explanation</a></h4>
+          <p class="venue">ECCV 2026</p><p class="authors"><strong>Sehyun Lee</strong>, Dahee Kwon, Damin Lee, and Jaesik Choi</p>
+          <p class="summary">Automatically separating the concepts represented by individual neurons across CNNs and Transformers.</p>
+          <div class="paper-links"><a href="https://arxiv.org/abs/2609.13198">Paper</a><a href="https://github.com/sehyun-lee288/spice">Code</a></div>
+          <p class="paper-note">Also presented at the ICML 2026 Workshop on Mechanistic Interpretability.</p>
         </div>
-        <!-- End of GCC -->
-
-        <div class="flex flex-wrap gap-x-8 mt-6">
-            <div class="w-full">
-                <h6><a href="https://arxiv.org/abs/2503.09058" target="_blank" class="font-medium text-blue-600 underline dark:text-blue-500 hover:no-underline">Implicit Contrastive Representation Learning with Guided Stop-gradient</a></h6>
-                <p>Byeongchan Lee* and <b>Sehyun Lee*</b></p>
-                <p>NeurIPS 2023</p>
-            </div>
+        <a class="paper-image" href="assets/images/publications/thumbnail_spice.png" aria-label="View the SPICE figure at full size"><img src="assets/images/publications/thumbnail_spice.png" alt="Mixed visual examples separated into distinct concept clusters" loading="lazy" width="821" height="239"></a>
+      </article>
+      <article class="paper text-only"><div class="paper-copy">
+        <h4><a href="https://dl.acm.org/doi/10.1145/3794839">Towards Transparent Time Series Analysis: Exploring Methods and Enhancing Interpretability</a></h4>
+        <p class="venue">ACM Computing Surveys 2026</p><p class="authors">Youngjin Park, Anh Tong, <strong>Sehyun Lee</strong>, Jihyeon Seong, Qin Xie, and Jaesik Choi</p>
+        <div class="paper-links"><a href="https://dl.acm.org/doi/10.1145/3794839">Paper</a></div>
+      </div></article>
+      <h3 class="year">2025</h3>
+      <article class="paper">
+        <div class="paper-copy">
+          <h4><a href="https://arxiv.org/abs/2508.01728">Granular Concept Circuits: Toward a Fine-Grained Circuit Discovery for Concept Representations</a></h4>
+          <p class="venue">ICCV 2025</p><p class="authors">Dahee Kwon*, <strong>Sehyun Lee*</strong>, and Jaesik Choi</p>
+          <p class="summary">Discovering connected neuron circuits that represent fine-grained visual concepts and help explain model decisions.</p>
+          <div class="paper-links"><a href="https://arxiv.org/abs/2508.01728">Paper</a><a href="https://github.com/daheekwon/GCC">Code</a><a href="projects/gcc/">Project</a></div>
         </div>
-    </div>
-    <!-- End of Project Info -->
+        <a class="paper-image" href="assets/images/publications/thumbnail_gcc.png" aria-label="View the concept circuit figure at full size"><img src="assets/images/publications/thumbnail_gcc.png" alt="A dog's classification circuit separated into concepts including eyes and a fluffy tail" loading="lazy" width="2248" height="949"></a>
+      </article>
+      <h3 class="year">2024</h3>
+      <article class="paper text-only"><div class="paper-copy">
+        <h4><a href="https://arxiv.org/abs/2503.09068">Probing Network Decisions: Capturing Uncertainties and Unveiling Vulnerabilities Without Label Information</a></h4>
+        <p class="venue">ICPRAI 2024</p><p class="authors">Youngju Joung*, <strong>Sehyun Lee*</strong>, and Jaesik Choi</p>
+        <div class="paper-links"><a href="https://arxiv.org/abs/2503.09068">Paper</a></div>
+      </div></article>
+      <h3 class="year">2023</h3>
+      <article class="paper">
+        <div class="paper-copy">
+          <h4><a href="https://proceedings.neurips.cc/paper_files/paper/2023/hash/6274172f7d981a8d58bbfd52342a9d1f-Abstract-Conference.html">Implicit Contrastive Representation Learning with Guided Stop-gradient</a></h4>
+          <p class="venue">NeurIPS 2023</p><p class="authors">Byeongchan Lee* and <strong>Sehyun Lee*</strong></p>
+          <p class="summary">Guiding stop-gradient to stabilize self-supervised learning and improve SimSiam and BYOL.</p>
+          <div class="paper-links"><a href="https://proceedings.neurips.cc/paper_files/paper/2023/hash/6274172f7d981a8d58bbfd52342a9d1f-Abstract-Conference.html">Paper</a><a href="https://arxiv.org/abs/2503.09058">arXiv</a></div>
+        </div>
+        <a class="paper-image" href="assets/images/publications/thumbnail_implicit.png" aria-label="View the guided stop-gradient figure at full size"><img src="assets/images/publications/thumbnail_implicit.png" alt="Comparison of symmetric and guided movement between paired representations" loading="lazy" width="1486" height="667"></a>
+      </article>
+      <h3 class="year">2017</h3>
+      <article class="paper text-only"><div class="paper-copy">
+        <h4><a href="https://tac.nist.gov/publications/2017/participant.papers/TAC2017.UNIST_SAIL.proceedings.pdf">UNIST SAIL System for TAC 2017 Cold Start Slot Filling</a></h4>
+        <p class="venue">TAC 2017 · System report</p><p class="authors">Seongwoo Lim, Soonjae Kwon, <strong>Sehyun Lee</strong>, and Jaesik Choi</p>
+        <div class="paper-links"><a href="https://tac.nist.gov/publications/2017/participant.papers/TAC2017.UNIST_SAIL.proceedings.pdf">Paper</a></div>
+      </div></article>
+    </section>
+    <section id="reports" aria-labelledby="reports-heading">
+      <h2 id="reports-heading">Technical Report Contributions</h2>
+      <p>Contributed baseline model evaluation and benchmarking as part of the NAVER Cloud HyperCLOVA X team.</p>
+      <ul class="plain-list"><li><a href="https://arxiv.org/abs/2601.01792">HyperCLOVA X 8B Omni</a> · 2026</li><li><a href="https://arxiv.org/abs/2601.03286">HyperCLOVA X 32B Think</a> · 2026</li></ul>
+    </section>
+    <section id="experience" aria-labelledby="experience-heading">
+      <h2 id="experience-heading">Industry Experience</h2>
+      <article class="entry"><div class="entry-heading"><h3><a href="https://www.navercloudcorp.com/en">NAVER Cloud</a></h3><p class="dates">Oct 2025–May 2026</p></div><p class="role">Residency Program Participant · World Best LLM Project</p><p>Benchmarked vision-language and language models, contributed HyperCLOVA X baseline evaluations, and investigated information flow through audio-language model components.</p></article>
+      <article class="entry"><div class="entry-heading"><h3><a href="https://www.gausslabs.ai/">Gauss Labs</a></h3><p class="dates">Dec 2021–Aug 2022</p></div><p class="role">Applied Scientist Intern</p><p>Developed anomaly detection for semiconductor process time series to support root-cause analysis of manufacturing defects.</p></article>
+      <article class="entry"><div class="entry-heading"><h3><a href="https://www.ineeji.com/">INEEJI</a></h3><p class="dates">Aug 2020–Feb 2021</p></div><p class="role">Machine Learning Researcher</p><p>Developed deep learning models for financial time-series forecasting and downstream decision signals.</p></article>
+    </section>
+    <section id="education" aria-labelledby="education-heading">
+      <h2 id="education-heading">Education</h2>
+      <article class="entry"><h3>KAIST</h3><p>Ph.D. student in Artificial Intelligence</p><p class="detail">Kim Jaechul Graduate School of AI · Advisor: Prof. Jaesik Choi</p></article>
+      <article class="entry"><div class="entry-heading"><h3>UNIST</h3><p class="dates">2018–2020</p></div><p>M.S. in Computer Science and Engineering</p><p class="detail">Advisor: Prof. Jaesik Choi</p></article>
+      <article class="entry"><div class="entry-heading"><h3>UNIST</h3><p class="dates">2014–2018</p></div><p>B.S. in Electrical and Computer Engineering</p></article>
+    </section>
+    <section id="talks" aria-labelledby="talks-heading">
+      <h2 id="talks-heading">Talks</h2>
+      <ul class="activity-list">
+        <li><span class="activity-year">2026</span><div><strong>Interpreting Neurons: From Understanding Concepts to Granular Concept Circuits</strong><p>Invited talk · AI EXPO KOREA, KAIST AI Technology Briefing</p></div></li>
+        <li><span class="activity-year">2024</span><div><strong>Domain-Specific XAI Techniques for Time Series</strong><p>KAIST XAI Tutorial Series</p></div></li>
+        <li><span class="activity-year">2023</span><div><strong>Perturbation-based Explanations</strong><p>KAIST XAI Tutorial Series · RISE and SISE</p></div></li>
+      </ul>
+    </section>
+    <section id="teaching" aria-labelledby="teaching-heading">
+      <h2 id="teaching-heading">Teaching &amp; Mentoring</h2>
+      <ul class="activity-list">
+        <li><span class="activity-year">2025–present</span><div><strong>Research Mentor</strong><p>KAIRI Internship Program · KAIST</p></div></li>
+        <li><span class="activity-year">2020</span><div><strong>Teaching Assistant · Explainable Artificial Intelligence</strong><p>AI702 · KAIST</p></div></li>
+        <li><span class="activity-year">2019</span><div><strong>Instructor · AI/DL Practical Training</strong><p>Samsung DS</p></div></li>
+        <li><span class="activity-year">2019</span><div><strong>Teaching Assistant · Advanced Machine Learning</strong><p>UNIST</p></div></li>
+      </ul>
+    </section>
+    <section id="service" aria-labelledby="service-heading"><h2 id="service-heading">Academic Service</h2><p><strong>Reviewer:</strong> NeurIPS 2026; ICML 2026 Workshop on Mechanistic Interpretability; BMVC 2026; ICCV 2025; CVPR 2025.</p></section>
+    <footer><a href="mailto:sehyun.lee@kaist.ac.kr">sehyun.lee@kaist.ac.kr</a></footer>
+  </main>
 </body>
 </html>

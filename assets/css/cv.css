@@ -1,0 +1,5 @@
+.cv-actions {display:flex;flex-wrap:wrap;gap:24px;margin-bottom:32px;font-size:14px;}
+.cv-actions button {font:inherit;color:var(--blue);background:none;border:0;padding:0;cursor:pointer;text-decoration:underline;text-underline-offset:4px;}
+.cv-heading {margin-bottom:40px;}.cv-heading h1 {margin-bottom:8px;}.cv-heading p {margin-bottom:6px;}
+.paper {display:block;margin-bottom:22px;}.paper-copy {display:block;} section {margin-bottom:36px;}
+@media print {.cv-actions {display:none;} h1 {font-size:25pt;} h2 {font-size:15pt;} h4 {font-size:11pt;} .paper,.entry {margin-bottom:12px;} .year {margin:16px 0 12px;} a {color:var(--ink);} .page {padding:0;} @page {size:A4;margin:18mm;}}
